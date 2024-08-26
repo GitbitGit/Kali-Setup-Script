@@ -4,7 +4,6 @@
 ./wsl_updater
 
 #kex-win prep
-
 sudo apt install -y kali-win-kex
 
 #Appens the following and adds it to the motd
@@ -20,6 +19,9 @@ sudo apt install -y kali-win-kex
 #beneficial word lists
 
 #hashcat_launcher -aka webgui for hashcat that makes things easier
+echo installing dependencies first
+./environments_and_dependencies_installer
+
 gh repo clone s77rt/hashcat.launcher 
 p7zip -d hashcat.launcher_1.1.5_linux.7z
 
