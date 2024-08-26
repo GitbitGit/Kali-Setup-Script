@@ -20,7 +20,7 @@ sudo apt install -y kali-win-kex
 #beneficial word lists
 
 #hashcat_launcher -aka webgui for hashcat that makes things easier
-gh repo clone s77rt/hashcat.launcher -
+gh repo clone s77rt/hashcat.launcher 
 p7zip -d hashcat.launcher_1.1.5_linux.7z
 
 
