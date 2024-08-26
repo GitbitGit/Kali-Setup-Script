@@ -21,7 +21,7 @@ systemctl --no-pager status user.slice > /dev/null 2>&1 && echo 'OK: Systemd is 
 sudo apt-get update -y && sudo apt upgrade -y && sudo apt-get full-upgrade -y && sudo apt-get install kali-linux-everything -y
 
 #install things that I may want or need to experiment with go package, or rust, or etc.
-apt-get install -y golang
-apt-get install du-dust
+sudo apt-get install -y golang
+sudo apt-get install du-dust
 
 
