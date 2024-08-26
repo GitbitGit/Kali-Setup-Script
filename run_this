@@ -5,6 +5,8 @@
 
 #kex-win prep
 
+sudo apt install -y kali-win-kex
+
 #Appens the following and adds it to the motd
 #post out on the cli the three possible
 #seamless="kex --sl -s"
