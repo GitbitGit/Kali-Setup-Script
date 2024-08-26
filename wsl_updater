@@ -1,0 +1,27 @@
+#updates needed parts of wsl-kali
+
+#from page
+# Enable systemd via /etc/wsl.conf
+{
+cat <<EOT
+[boot]
+systemd=true
+EOT
+} | sudo tee /etc/wsl.conf
+
+Echo you need to restart kali by typing "exit" and the running wsl --terminate kali-linux
+and then entering back in to the WSL distro
+
+
+#checks if systemd can run
+echo Checking if SystemD Works
+systemctl --no-pager status user.slice > /dev/null 2>&1 && echo 'OK: Systemd is running' || echo 'FAIL: Systemd not running'
+
+#runs updates, upgrades, full-upgrade and pull kali-linux-everything metapackage
+sudo apt-get update -y && sudo apt upgrade -y && sudo apt-get full-upgrade -y && sudo apt-get install kali-linux-everything -y
+
+#install things that I may want or need to experiment with go package, or rust, or etc.
+apt-get install -y golang
+apt-get install du-dust
+
+
