@@ -1,3 +1,15 @@
+#install nvm
+#which allows using different versions of npm 
+#npm 16
+gh repo clone nvm-sh/nvm
+cd nvm
+./install.sh
+echo Exiting bash to apply changes
+exit
+
+export NODE_OPTIONS=--openssl-legacy-provider
+nvm install 16
+
 #install npm
 sudo apt install npm
 
