@@ -6,7 +6,7 @@
 #kex-win prep
 
 #Appens the following and adds it to the motd
-#post out on the cli the three possib>
+#post out on the cli the three possible
 #seamless="kex --sl -s"
 #window="kex --win -s"
 #enhanced="kex --esm --ip -s"
