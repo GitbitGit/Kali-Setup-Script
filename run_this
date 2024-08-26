@@ -1,0 +1,19 @@
+#Calls other scripts
+
+#wsl2 prep 
+
+#kex-win prep
+
+#Appens the following and adds it to the motd
+#post out on the cli the three possib>
+#seamless="kex --sl -s"
+#window="kex --win -s"
+#enhanced="kex --esm --ip -s"
+
+
+#Security repos
+
+#beneficial word lists
+
+#adds a custom cron to target an outside directory for regular rsync operations
+#rsync command here
