@@ -1,0 +1,14 @@
+#repo installer
+
+#plentiful resource for security lists
+gh repo clone danielmiessler/SecLists
+
+#one rule to rule them all
+gh repo clone NotSoSecure/password_cracking_rules
+
+#one rule to rule them still
+gh repo clone stealthsploit/OneRuleToRuleThemStill
+
+#creates a symlink for rockyou and the rest to be easier to access
+ln -s /usr/share/wordlists/ wordlists
+
